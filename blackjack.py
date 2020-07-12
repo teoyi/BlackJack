@@ -260,6 +260,9 @@ while True:
                 # show_all(player_hand, dealer_hand)
                 player_busts(player_hand, dealer_hand, player_chips)
                 break
+            elif player_hand.value == 21:
+                player_wins(player_hand, dealer_hand, player_chips)
+                break
             else:
                 continue
 
